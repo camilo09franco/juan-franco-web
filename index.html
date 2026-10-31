@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Franco | Mi mundo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--azul:#168cff;--fondo:#080d18;--tarjeta:#111a2b;--blanco:#f4f7ff;--gris:#a9b5c9}
+body{font-family:Arial,sans-serif;background:var(--fondo);color:var(--blanco);line-height:1.7}
+header{background:rgba(8,13,24,.96);padding:18px 8%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;position:sticky;top:0;z-index:10;border-bottom:1px solid #1d2d46}
+.logo{color:var(--azul);font-size:25px;font-weight:bold}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--blanco);text-decoration:none;font-size:14px}nav a:hover{color:var(--azul)}
+.inicio{min-height:85vh;padding:75px 8%;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px;background:radial-gradient(ellipse at 75% 30%,#12376a 0%,transparent 55%)}
+.etiqueta{color:var(--azul);letter-spacing:3px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(38px,6vw,72px);line-height:1.12;margin:18px 0}h1 span,.titulo span{color:var(--azul)}
+.inicio p,.descripcion{color:var(--gris);max-width:700px}
+.boton{display:inline-block;margin-top:25px;padding:12px 23px;background:var(--azul);color:white;text-decoration:none;border-radius:8px;font-weight:bold}
+.foto-marco{max-width:370px;width:100%;justify-self:center;padding:10px;border:1px solid #2b5c91;border-radius:20px;background:#101b2c;box-shadow:0 20px 70px #0008}
+.foto-marco img{display:block;width:100%;height:480px;object-fit:cover;object-position:center 35%;border-radius:13px}
+section{padding:70px 8%}.oscuro{background:#0c1422}.titulo{font-size:34px;margin-bottom:14px}.descripcion{margin-bottom:28px}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:25px}
+.tarjeta{background:var(--tarjeta);padding:24px;border:1px solid #23334d;border-radius:14px;transition:.25s}.tarjeta:hover{transform:translateY(-4px);border-color:var(--azul)}
+.emoji{font-size:32px;margin-bottom:10px}.tarjeta h3{margin-bottom:9px;color:var(--azul)}.tarjeta p,.dato{color:var(--gris)}
+.frase{text-align:center;background:linear-gradient(120deg,#0b1e39,#102e55);padding:48px 8%;font-size:clamp(22px,4vw,34px);font-weight:bold}
+.contacto a{color:var(--blanco);text-decoration:none;overflow-wrap:anywhere}.contacto a:hover{color:var(--azul)}
+footer{text-align:center;padding:25px;color:var(--gris);border-top:1px solid #23334d}footer span{color:var(--azul)}
+@media(max-width:760px){.inicio{grid-template-columns:1fr;padding-top:55px}.foto-marco{max-width:300px}.foto-marco img{height:390px}header{padding:16px 5%}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">JF.</div>
+  <nav>
+    <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#gustos">Mis gustos</a><a href="#metas">Mis metas</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+<section class="inicio" id="inicio">
+  <div>
+    <div class="etiqueta">Bienvenido a mi mundo</div>
+    <h1>Hola, soy<br><span>Juan Franco</span></h1>
+    <p>Soy una persona tranquila, con sueños, metas y ganas de salir adelante. Esta página representa mis gustos, mis proyectos y lo que quiero lograr en el futuro.</p>
+    <a class="boton" href="#sobre-mi">Conoce más sobre mí</a>
+  </div>
+  <div class="foto-marco"><img src="juan_franco.jpg" alt="Foto personal de Juan Franco"></div>
+</section>
+<section class="oscuro" id="sobre-mi">
+  <h2 class="titulo">Sobre <span>mí</span></h2>
+  <p class="descripcion">Me considero una persona tranquila y algo callada, pero también me gusta compartir con los demás. Quiero aprender cosas nuevas, prepararme para el futuro y construir mi propio camino.</p>
+  <div class="tarjetas">
+    <article class="tarjeta"><div class="emoji">🙋‍♂️</div><h3>Mi personalidad</h3><p>Soy tranquilo, reservado y me gusta hacer las cosas a mi manera.</p></article>
+    <article class="tarjeta"><div class="emoji">💡</div><h3>Mi forma de pensar</h3><p>Quiero seguir aprendiendo, mejorar cada día y buscar soluciones a los retos.</p></article>
+    <article class="tarjeta"><div class="emoji">🚀</div><h3>Mi futuro</h3><p>Quiero prepararme, trabajar por mis metas y crear algo propio.</p></article>
+  </div>
+</section>
+<section id="gustos">
+  <h2 class="titulo">Mis <span>gustos</span></h2><p class="descripcion">Estas son algunas de las cosas que me gustan y hacen parte de mis intereses.</p>
+  <div class="tarjetas">
+    <article class="tarjeta"><div class="emoji">🏍️</div><h3>Las motos</h3><p>Me gustan las motos y todo lo relacionado con ellas.</p></article>
+    <article class="tarjeta"><div class="emoji">⚽</div><h3>El fútbol</h3><p>Me gusta el fútbol, disfrutar los partidos y compartir el deporte.</p></article>
+    <article class="tarjeta"><div class="emoji">🏀</div><h3>El baloncesto</h3><p>Es otro de mis deportes favoritos y una actividad que me interesa.</p></article>
+    <article class="tarjeta"><div class="emoji">🔵</div><h3>El color azul</h3><p>Es mi color favorito y también es parte del diseño de esta página.</p></article>
+    <article class="tarjeta"><div class="emoji">🍳</div><h3>La gastronomía</h3><p>Me interesa la cocina y quiero aprender más sobre el mundo gastronómico.</p></article>
+  </div>
+</section>
+<section class="oscuro" id="metas">
+  <h2 class="titulo">Mis sueños y <span>metas</span></h2><p class="descripcion">Tengo objetivos que quiero cumplir con esfuerzo, dedicación y aprendizaje.</p>
+  <div class="tarjetas">
+    <article class="tarjeta"><div class="emoji">👨‍🍳</div><h3>Gastronomía</h3><p>Quiero estudiar gastronomía, aprender técnicas de cocina y desarrollar mis habilidades culinarias.</p></article>
+    <article class="tarjeta"><div class="emoji">🏗️</div><h3>Ingeniería civil</h3><p>También me interesa estudiar ingeniería civil y aprender a diseñar y construir proyectos.</p></article>
+    <article class="tarjeta"><div class="emoji">💼</div><h3>Mi propio emprendimiento</h3><p>Quiero tener un negocio propio, desarrollar buenas ideas y hacer que mi proyecto crezca.</p></article>
+    <article class="tarjeta"><div class="emoji">🌎</div><h3>Estudiar en otro país</h3><p>Sueño con salir del país, conocer nuevas culturas y tener la oportunidad de estudiar en el extranjero.</p></article>
+  </div>
+</section>
+<div class="frase">“Los sueños se convierten en metas cuando empiezas a trabajar por ellos.”</div>
+<section class="contacto" id="contacto">
+  <h2 class="titulo">Mis <span>contactos</span></h2><p class="descripcion">Puedes encontrar aquí mis datos de contacto y redes sociales.</p>
+  <div class="tarjetas">
+    <article class="tarjeta"><div class="emoji">📧</div><h3>Correo electrónico</h3><p class="dato"><a href="mailto:francogodoyjuancamilo@gmail.com">francogodoyjuancamilo@gmail.com</a></p></article>
+    <article class="tarjeta"><div class="emoji">📸</div><h3>Instagram</h3><p class="dato"><a href="https://www.instagram.com/JUANCFRANCO11/" target="_blank" rel="noopener noreferrer">@JUANCFRANCO11</a></p></article>
+    <article class="tarjeta"><div class="emoji">📘</div><h3>Facebook</h3><p class="dato">Juan C Franco — <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Buscar perfil</a></p></article>
+    <article class="tarjeta"><div class="emoji">📱</div><h3>Celular</h3><p class="dato">312 816 9697</p></article>
+  </div>
+  <p class="descripcion" style="margin-top:22px">Nota: si publicas esta página en Internet, considera quitar el número de celular para proteger tu privacidad.</p>
+</section>
+</main>
+<footer><p>© 2026 <span>Juan Franco</span> | Mi página personal</p><p>Hecha con dedicación y metas por cumplir.</p></footer>
+</body>
+</html>
